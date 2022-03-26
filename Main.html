@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<!-- Google Fonts here ↓ -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@600&family=Josefin+Sans&family=Libre+Baskerville:ital@1&family=Lobster&display=swap" rel="stylesheet">
+	
+	<title>Mon CV</title>
+</head>
+<body>
+	<div id="page">	
+		<header class="nav">
+			<div class="title">
+				<div class="title2">
+					<h1>Votre CV en ligne</h1>
+				</div>
+				<div class="logo">
+					<img src="images/cvlogo.png" alt="icon" width="48" height="48">
+				</div>
+			</div>
+			<div class="logo2">
+				<img src="images/logo.png" alt="Logotype" width="100" height="64">				
+			</div>
+			<nav>
+				<ul class="navbut">
+					<li><a href="#">Modifier</a></li>
+					<li><a href="#">Partager</a></li>
+					<li><a href="#">Imprimer</a></li>
+				</ul>
+			</nav>
+		</header>	
+			<section id="CV"> <!-- L'encadrement du CV -->
+				<header class="headcv">
+					<h1>Alex Larionov</h1>
+						<!-- ADRESSE, Info Perso-->
+					<div class="info">
+						<!-- J'ai trouvé sur web comment changer une img avec :hover (sirv.com/help/articles/hover-change-image/#use-html-to-select-images) -->
+						<div class="photo">
+							<img src="images/anon2.gif" class="anon" alt="Anonymous">
+							<img src="images/myphoto.png" class="img-top" alt="MaPhoto">
+						</div>
+						<p class="adresse"><a href="https://www.google.com/maps/place/305+Rue+des+Pins,+12850+Onet-le-Ch%C3%A2teau/@44.3779277,2.5789574,17z/data=!3m1!4b1!4m5!3m4!1s0x12b28782e545b5bd:0x25bf10fa25f0d225!8m2!3d44.3779277!4d2.5811461" target="_blank">
+						<img src="images/maps.svg" class="infoicons" width="48" height="48" alt="adresse">
+							<span>305 Rue des Pins<br>
+							12850 Onet le Château</span></a>
+						</p>
+						<p class="telegram">
+							<a href="https://telegram.me/Gmaitre999">
+							<img src="images/telegram.svg" class="infoicons" width="48" height="48" alt="Telegram"><span>Mon Telegram</span></a>
+						</p>
+						<p class="tel">
+							<a href="tel:+33695096643">
+							<img src="images/call.png" class="infoicons" width="48" height="48" alt="Telephone" ><span>06 95 09 66 43</span></a>
+						</p>
+						<p class="mail">
+							<a href="mailto:gmaitre.1991@gmail.com">
+							<img src="images/gmail.svg" class="infoicons" width="48" height="48" alt="Gmail"><span>gmaitre.1991@gmail.com</span></a>
+						</p>
+					</div>
+				</header>
+				<div class="infogen">	
+					<aside>
+							<h2>Compétences</h2>
+								<ul>
+									<li>Rigueur</li>
+									<li>Autonomie</li>
+									<li>Polyvalence</li>
+									<li>Réactivité</li>
+									<li>Capacité d'adaptation</li>
+								</ul>
+							<h2>Langues</h2>
+								<ul>
+									<li>Anglais</li>
+									<li>Russe</li>
+								</ul>
+							<h2>Permis</h2>
+								<ul>
+									<li>B</li>
+									<li>C</li>
+								</ul>
+							<h2>Centres d'intérêt</h2>
+								<ul>
+									<li>Informatique</li>
+									<li>Photo/Vidéo-Montage</li>
+									<li>Actualités</li>
+									<li>Voitures</li>
+								</ul>
+					</aside>
+					<article>
+						<div class="formations">							
+							<h2 class="titres1">Formations</h2>
+								<div class="article">
+								<h3>BEP</h3>
+							<p><span class="dates">2009</span></p>
+							<p>Niveau BEP Comptabilité</p>
+							</div>
+						</div>
+						<div class="exp">
+							<h2 class="titres1">Expériences</h2>
+								<div class="article">
+									<div id="overlay" onclick="off()">
+  										<div id="text">Voilà à quoi ressemble ce camion</div>
+  										<img src="images/camion.jpg" class="camion" width="800" height="600">
+									</div>	
+									<h3>Chauffeur poids lourd / <a class="Entreprise" href="https://www.charlesandre.com/" title="Le site de la groupe">National Calsat</a></h3>
+										<p class="dates">05/2019 à 01/2022</p>
+										<p>Transport et livraison <a href="#" onclick="on()" title="à quoi ressemble ce camion">des bouteilles de gaz</a><br>
+											<a href="https://youtu.be/j07ptwjNvVs?t=475" target="_blank"> Petit exemple de ma journée</a> &#128517;
+										</p>
+								</div>
+								<div class="article">
+									<h3>Agent de fabrication / <a class="Entreprise" href="https://www.technilat.fr/">Socofal</a></h3>
+										<p class="dates">02/2017 à 05/2018</p>
+										<p>Agent polyvalent dans l'atelier des sommiers
+										</p>
+								</div>
+								<div class="article">
+									<h3>Agent de fabrication / <a class="Entreprise" href="http://www.menuiserie-devic.fr/">Menuiserie Devic</a></h3>
+										<p class="dates">11/2015 à 09/2016</p>
+										<p>Agent de finition des ouvrants en PVC
+										</p>
+								</div>
+								<div class="article">
+									<h3>Conducteur offset / <a class="Entreprise" href="https://www.google.com/maps/place/M%C3%A9rico+Delta+Print/@44.4632381,2.727349,18.25z/data=!4m12!1m6!3m5!1s0x0:0x9744056f2a2cf0d6!2sMerico!8m2!3d44.4633518!4d2.7276413!3m4!1s0x0:0x203ae2ebae0a4246!8m2!3d44.4632587!4d2.7280156" 
+										title="Pas de site &#128518;">Merico Delta Print</a></h3>
+										<p class="dates">08/2014 à 12/2014</p>
+										<p>Agent polyvalent puis formé en conducteur Offset
+										</p>
+								</div>
+								<div class="article">
+									<h3>Employé polyvalent / <a class="Entreprise" href="http://www.apbfrance.com/">Auto-Pièce Burguière</a></h3>
+										<p class="dates">01/2011 à 12/2012</p>
+										<p>Côntroleur des états des véhicules, mise à jour du parc sur le site et les sites partenaires, vendeur.
+										</p>
+								</div>
+								<div class="article">
+									<h3>Employé polyvalent en restauration / <a class="Entreprise" href="https://www.sodexo.fr/">Sodexo (Bosch)</a></h3>
+										<p class="dates">10/2010 à 12/2010</p>
+										<p>Préparateur des entrées, plongeur, serveur
+										</p>
+								</div>
+								<div class="article">
+									<h3>Chauffeur-livreur / <a class="Entreprise" href="https://www.options.fr/options-nice">Options Nice</a></h3>
+										<p class="dates">06/2010 à 09/2010</p>
+										<p>Livraison du matériel auprès des professionnels
+										</p>
+								</div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<footer>
+				<div class="footer_menus">
+					<div class="footer_container">
+						<div class="footer_menu">
+							<h3 class="footertitle">À propos de CV-Live</h3>
+							<nav class="navfooter">
+								<ul class="menufooter">
+									<li><a href="#">À propos de moi</a></li>
+									<li><a href="#">Me Contacter</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer_menu">
+							<h3 class="footertitle">Support</h3>
+							<nav class="navfooter">
+								<ul class="menufooter">
+									<li><a href="#">Politique de confidentialité</a></li>
+									<li><a href="#">Conditions générales et juridiques</a></li>
+									<li><a href="#">Conditions d’utilisation</a></li>
+									<li><a href="#">Cookies</a></li>
+									<li><a href="#">FAQ</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer_menu">
+							<h3 class="footertitle">Langues</h3>
+							<nav class="navfooter">
+								<ul class="menufooter">
+									<li><a href="#">Anglais</a></li>
+									<li><a href="#">Español</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="footer_copyright">
+						<div class="footerlogo">
+							<p><img src="images/logo.png" alt="Logotype" width="50" height="32"></p>
+						</div>
+						<div class="copyright"><p>© Copyright 2022</p></div>
+						<div class="company"><p>CV-Live,</p></div>
+						<div class="rights"><p>All Rights Reserved</p></div>
+					</div>
+				</div>
+			</footer>
+	</div>
+</body>
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+</html>

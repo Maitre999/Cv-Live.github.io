@@ -1,0 +1,304 @@
+@font-face {
+    font-family: 'centuryregular';
+    src: url('fonts/ceaswfte-webfont.woff2') format('woff2'),
+         url('fonts/ceaswfte-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: 'Josefin Sans', Arial, sans-serif;
+  margin-top: 0px;
+  background-image: url(images/Background.jpg);
+  background-attachment: fixed;
+  background-repeat: round;
+  margin-bottom: 0px;
+  user-select: none;
+  -webkit-print-color-adjust: exact;/* en visualisant l'imprimé PDF j'ai trouvé que les couleurs ne correspondent pas
+                                      à ma page, donc j'ai rajouté ce CSS règle pour que les couleurs soient exactes 
+                                      comme sur la page */
+}
+
+#page {
+  width: 50%;
+  min-width: 800px;
+  max-width: 1000px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: darkgreen;
+}
+a:hover {
+  color: SlateBlue !important; /* !important ajouté pour la priorité */
+}
+a:visited {
+  color: darkgreen;
+}
+.info a {
+  width: 150px;
+  position: relative;
+  display: inline-block;
+}
+a span {
+  position: absolute;
+  width: 150px;
+  top: 100%;
+  left: 0%;
+}
+.nav {
+  display: flex;
+  z-index: 1;
+  position: sticky;
+  top: 0px;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: inset -3px -3px 12px 8px rgb(0 0 0 / 16%), 0 4px 6px rgba(0,0,0,0.45);
+  background-color: gray;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  order: 3;
+  width: 38%;
+}
+.navbut li {
+  background-color: dimgray;
+  background-image: linear-gradient(ghostwhite, rgba(255,255,255,0));
+  transition: background-color 0.35s;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.45);
+  border-radius: 15px;
+  padding: 10px 0;
+  align-items: center;
+}
+.navbut li:hover {
+  background-color: darkred;
+}
+li a {
+  padding: 10px 8px;
+  border-radius: inherit;
+}
+.title {
+  display: flex;
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+  margin-left: 3%;
+  width: 40%;
+  user-select: none;
+}
+.title2 {
+  order: 2;
+}
+.logo {
+  order: 1;
+  margin-right: 3%;
+}
+.logo2 {
+
+}
+.navbut {
+  display: flex;
+  order: 3;
+  padding: 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+.headcv {
+  padding: 12px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: rgba(63, 57, 57, 0.2);
+  box-shadow: inset -3px -3px 12px 8px rgb(0 0 0 / 16%), 0px 0px 6px rgb(0 0 0 / 45%);
+}
+.headcv h1 {
+  font-family: 'centuryregular', sans-serif;
+  text-align: center;
+  font-size: 3.5em;
+  margin: auto;
+}
+#CV {
+  margin-top: 10px;
+  background-color: rgba(172, 172, 172, 0.25);
+  border-radius: 15px;
+  box-shadow: inset -3px -3px 12px 8px rgb(0 0 0 / 16%), 0 4px 6px rgba(0,0,0,0.45);
+}
+.info {
+  text-align: center;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1%;
+}
+.adresse, .mail {
+  width: 20%;
+}
+.infogen {
+  display: flex;
+  margin: 10px 0;
+}
+aside h2 {
+  text-align: center;
+}
+article p {
+  text-align: center;
+  font-size: 1.15em;
+}
+.formations {
+  border-radius: 15px 0px 0px 15px;
+  box-shadow: inset -3px -3px 12px 8px rgb(0 0 0 / 16%), 0px 0px 6px rgb(0 0 0 / 45%);
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(63, 57, 57, 0.1);
+}
+.exp {
+  border-radius: 15px 0px 15px 0px;
+  box-shadow: inset -3px -3px 12px 8px rgb(0 0 0 / 16%), 0px 0px 6px rgb(0 0 0 / 45%);
+  background-color: rgba(63, 57, 57, 0.1);
+  padding: 5px;
+}
+.article {
+  background-color: rgba(63, 57, 57, 0.3);
+  border-radius: 15px;
+  box-shadow: inset -3px -3px 12px 8px rgb(0 0 0 / 16%), 0px 0px 6px rgb(0 0 0 / 45%);
+  padding: 10px;
+  margin: 7px;
+}
+.titres1 {
+  font-size: 1.5em;
+  margin: 2%;
+}
+article h2 {
+  text-align: center;
+  font-size: 1.4em;
+  margin: 0;
+}
+article h3 {
+  text-align: center;
+  font-size: 1.3em;
+  margin: 0;
+}
+.article h3 {
+  border-bottom: 1px #3f3939 solid;
+}
+.headcv, .dates {
+	font-family: 'Lobster', sans-serif;
+}
+.Entreprise {
+	font-family: 'Bungee';
+}
+aside {
+  width: 23%;
+  border-radius: 0px 15px 15px 0px;
+  box-shadow: inset -3px -3px 12px 8px rgb(0 0 0 / 16%), 0px 0px 6px rgb(0 0 0 / 45%);
+  background-color: rgba(63, 57, 57, 0.1);
+  padding: 15px;
+  margin-bottom: auto;
+}
+aside li {
+  list-style: circle;
+  font-size: 1.1em;
+}
+article {
+  margin-left: 12px;
+  margin-right: auto;
+  flex-grow: 1;
+}
+.photo {
+  position: relative;
+  width: 180px; /* can be omitted for a regular non-lazy image */
+  height: 180px;
+}
+.photo img.img-top {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+}
+.photo:hover img.img-top {
+  opacity: 1;
+  transition: 0.5s;
+}
+.photo:hover img.anon {
+  opacity: 0;
+  transition: 0.5s;
+}
+.anon {
+  width:100%; /* you can use % */
+  height: auto;
+}
+.info p:hover img {
+  transform: scale(1.15);
+}
+footer {
+  background-color: gray;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: inset -3px -3px 12px 8px rgb(0 0 0 / 16%), 0 4px 6px rgba(0,0,0,0.45);
+  min-width: 800px;
+  width: auto;
+}
+.footer_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.navfooter {
+  width: inherit;
+  margin: 0;
+}
+footer li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+.menufooter {
+  width: inherit;
+  padding: 0;
+}
+.footertitle {
+  border-bottom: 1px black solid;
+  text-align: center;
+  user-select: none;
+}
+.footer_copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+  user-select: none;
+}
+.footer_copyright div {
+  margin: 0 1%;
+}
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  z-index: 1;
+  top: 52%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  color: #d1b470;
+  transform: translate(-50%,-50%);
+}
+.camion {
+  position: absolute;
+  width: 100%;
+  object-fit: contain;
+  margin-top: 10%;
+}
