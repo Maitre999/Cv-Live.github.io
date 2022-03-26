@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'centuryregular';
-    src: url('fonts/ceaswfte-webfont.woff2') format('woff2'),
-         url('fonts/ceaswfte-webfont.woff') format('woff');
+    src: url('ceaswfte-webfont.woff2') format('woff2'),
+         url('ceaswfte-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 body {
 	font-family: 'Josefin Sans', Arial, sans-serif;
   margin-top: 0px;
-  background-image: url(images/Background.jpg);
+  background-image: url(Background.jpg);
   background-attachment: fixed;
   background-repeat: round;
   margin-bottom: 0px;
